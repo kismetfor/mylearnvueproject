@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 普通字符串
+        let name = 'Jack'
+        let a = "hello world"
+        // 模板字符串
+        // 可以任意换行
+        // 在字符串中方便的嵌入表达式
+        let b = `Jack`
+        let c = `hello nihao`
+
+        //好处
+        // 普通字符串不能换行
+
+        // 
+        let age = 16
+        // let str = 'my name is' + name + ', i am '+age+' years old, i am ' + (age>18?'已成年':'未成年')
+        let str = `My name is ${name}, i am ${age} years old, i am ${(age>18?'已成年':'未成年')}`
+        console.log(str)
+    </script>
+</body>
+</html>

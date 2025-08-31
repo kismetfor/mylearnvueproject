@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 数组的解构
+        // const arr = [1,2,3]
+        // 把 arr 的三个元素分别赋值给a,b,c
+
+        // let [a,b,c] = arr
+        // console.log(a,b,c)
+        // 把 arr 的后 2个元素分别赋值给b,c
+
+        // let [,b,c] = arr
+        // console.log(b,c)
+        // 把 arr 的 第一个元素赋值给a
+        // let [a,,] = arr
+        // console.log(a)
+        // 用逗号跳过就行了
+
+        // 第一个元素给 a，剩下的元素给数组
+        // let [a, ...arr1] = arr
+        // console.log(a, arr1)
+
+
+        // 4.练习
+        const arr = [2,[3, 4],5] 
+        //1、把arr中的3，4赋值给变量a,b
+        let [c,...d] = arr
+        // d = [[3, 4],5] 
+        let [e,] = d
+        // e = [3,4]
+        let [a,b] = e
+        console.log(a,b)
+
+        // 以上是我的解答，接下来是老师的方法：
+        let [, [a1, b1], ] = arr
+        console.log(a1, b1)
+
+
+    </script>
+</body>
+</html>

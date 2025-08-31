@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        // function square(x) {
+        //     return x * x;
+        // }  
+        // const square = (x) => {
+        //     return x*x
+        // }
+        // const square = x => 
+        //     x*x
+        
+        // console.log(square(4))
+
+        // 2
+        // function sum(a, b, c) {
+        //     return a + b + c;
+        // }
+        // const sum = (a, b, c) => 
+        //     a + b + c
+        // console.log(sum(4,1,1))
+
+        //3.将下面对象的方法修正为能正确增加 `count`（提示：考虑 `this`）
+            // const obj = {
+            //     count: 0,
+            //     inc: function() {
+            //         setTimeout(function() {
+            //         this.count++;
+            //         }, 100);
+            //     }
+            // };
+            // 这个超纲了，还没学过 this
+        // 4.
+            // function makePair(a, b) {
+            //     return { a: a, b: b };
+            // }
+        const makePair = (a, b) => ({ a: a, b: b })
+        let {a, b} = makePair(1,2)
+        console.log(a, b)
+    </script>
+</body>
+</html>

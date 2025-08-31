@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //第一组方法-添加/删除/包含
+
+        // const arr = [11,22,33]
+        // 添加
+        // 头部添加
+        // const len = arr.push(44)
+        // console.log(arr, len)
+        // 尾部添加
+        // const len = arr.unshift(44)
+        // console.log(arr, len)
+
+        // 删除
+        // const last = arr.pop()
+        // console.log(arr, last)
+        // const first = arr.shift()
+        // console.log(arr, first)
+        
+        // 在任意位置删除或添加
+        // splice(startIndex, delcount, additem)(起始下标，删除个数，添加元素)
+        // arr.splice(1, 1,)
+        // arr.splice(2, 0, 44)
+        // console.log(arr)
+
+        // 包含
+        // console.log(arr.includes(11))
+        // console.log(arr.includes(55))
+        
+        //--------------------------------------------------------------
+        //第二组方法-遍历
+        // const arr = [11, 22, 33, 44]
+        // 使用 for 循环
+        // for (let index = 0; index < arr.length; index++) {
+        //     const element = arr[index];
+        //     console.log(element)
+        // }
+
+        // for-each
+        // arr.forEach((item, index, array) => {
+        //     // item 当前元素
+        //     // index 元素下标
+        //     // array 数组本身
+        //     console.log(item, index, array)
+        // })
+        //--------------------------------------------------------------
+        //第三组方法-过滤
+        const arr = [11, 22, 33, 44]
+        // const evenarr = arr.filter((item) => {
+        //     // if(item%2) return true
+        //     // else return false
+        //     return item%2==0
+        // })
+        // const evenarr = arr.filter((item) => item%2==0)
+        // console.log(evenarr)
+
+        // 作业需求：保留 arr 中大于 30 的数
+        const bigarr = arr.filter((item) => item > 30)
+        console.log(bigarr)
+
+    </script>
+</body>
+</html>

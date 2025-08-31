@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 基本用法
+        // const person = {name:'liutao', age:21}
+        // let {name, age} = person
+        // let {age: age1} = person
+        // 左边的是对象的属性，：右边是变量名
+        // console.log(age1)
+
+        // 到这里发现，数组解构和赋值都是用[]，对象使用{}
+        
+        // const obj = {name:'liutao', age: 21, address: '北京北京市昌平区沙河镇小米青年公寓 3 号楼 716'}
+        //eg1:把 obj的3个属性值分别赋值给变量 name, age, address
+        // let {name, age,address} = obj
+        // console.log(name, age, address)
+
+        //eg2:把obj 的name,age属性值赋值给变量 name, age
+        // let {name, age} = obj
+        // console.log(name, age)
+
+        //eg3:把 obj的 name属性值赋值给变量name， 剩余的赋值给变量rest
+        // let {name, ...rest} = obj
+        // console.log(name, rest)
+
+        //eg4:把obj的name 属性值 赋值给变量 uname
+        // let {name: uname} = obj
+        // console.log(uname)
+
+        // 练习
+        const arr = [2,[3, 4],5]
+
+        // 1、把 arr 中的 3，4 赋值给变量 a, b
+        // let [,[a,b],] = arr
+        // console.log(a,b)
+
+        const obj = {
+        data: {
+            code: 10000,
+            message: '频道列表获取成功',
+            result: ['HTML', 'CSS', 'JavaScript', 'Vue', 'Spri']
+        },
+        status: 200,
+        statusText: 'Ok'
+        }
+
+        // 2、把 obj 中的 code，message，result 的值取出来赋值给变量 codI，message，list
+        // let {data} = obj
+        // console.log(data)
+        // let {code: codI, message: message, result: list} = data
+        // console.log(codI,message,list)
+
+        // 以上是个人的做法，接下来是参考答案
+        // 方法 1
+        // let {code: codI, message: message, result: list} = obj.data
+        // console.log(codI,message,list)
+        // 方式一：直接从 obj.data 解构
+
+        // 方法 2
+        let {data: {code: codI, message: message, result: list}} = obj
+        console.log(codI,message,list)
+        // 方式二：一次性解构到最里层
+
+        // 变量改名
+      
+        
+        // 默认值
+    
+    </script>
+</body>
+</html>

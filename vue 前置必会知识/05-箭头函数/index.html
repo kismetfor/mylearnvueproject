@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 箭头函数是对之前的函数的简化
+        //有名表达式
+        // function fn() {
+        //     //....
+        //     //return ...
+        // }
+        // // 函数表达式
+        // const fn = function(){
+        //     //...
+        // }
+
+        //1. 语法
+        // const add = (x, y) => {
+        //     return x+y
+        // }
+        // const result = add(1, 2)
+        // console.log(result)
+
+        // 2. 特性
+        // 2.1 当参数只有一个，可以省略小括号
+        // const log = (arg) => {
+        // const log = arg => {
+        //     console.log(arg)
+        // }
+        // log(6666)
+
+        // 2.2 当函数体只有一句话时，可以省略大括号，此时箭头函数自带 return 功能
+        // const add = (x,y) =>
+        //     x+y
+        // console.log(add(1,2))
+        
+        //2.3 当直接返回一个对象时，为了简写，需要使用小括号括起来
+        // const state = () => {
+        //     return {
+        //         token: 'xxx',
+        //         userInfo: {
+        //             name: 'lihua',
+        //             age: 18
+        //         }
+        //     }
+        // }
+        // console.log(state())
+
+        // const state = () => 
+        //     (
+        //         {token: 'xxx',
+        //         userInfo: {
+        //             name: 'lihua',
+        //             age: 18
+        //         }}
+        //     )
+        
+
+        // console.log(state())
+
+        // 3. 应用：
+        // 既可以用于函数的声明，也可以用于回调函数传参
+        // setTimeout(function() {
+        //     console.log('time out!')
+        // }, 2000)
+        setTimeout(() => console.log('time out!'), 2000)
+    </script>
+</body>
+</html>
