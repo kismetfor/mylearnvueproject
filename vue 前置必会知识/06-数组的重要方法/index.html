@@ -53,7 +53,7 @@
         // })
         //--------------------------------------------------------------
         //第三组方法-过滤
-        const arr = [11, 22, 33, 44]
+        // const arr = [11, 22, 33, 44]
         // const evenarr = arr.filter((item) => {
         //     // if(item%2) return true
         //     // else return false
@@ -63,9 +63,35 @@
         // console.log(evenarr)
 
         // 作业需求：保留 arr 中大于 30 的数
-        const bigarr = arr.filter((item) => item > 30)
-        console.log(bigarr)
+        // const bigarr = arr.filter((item) => item > 30)
+        // console.log(bigarr)
 
+        //--------------------------------------------------------------
+        //第四组方法-映射
+        const arr = [11, 22, 33, 44]
+        // arr.map((item, index, array) => {
+        //     console.log(item, index, array)
+        // })
+        // const doubleArr = arr.map((item) => {
+        //     return item * 2
+        // })
+        // const doubleArr = arr.map(item => (item * 2))
+        // console.log(doubleArr)
+
+        // 需求：得到一个对象数组
+        // 思考如何由arr得到如下数组：{ index: 0, value: 11 }, { index: 1, value: 22 }, { index: 2, value: 33 }, { index: 2, value: 44 }  
+
+        
+        // const newArr = arr.map((item, index) => {
+        //     return {
+        //         // { 属性名: 值 }
+        //         // {key, value}
+        //         value: item,
+        //         index: index
+        //     }
+        // })
+        const newArr = arr.map((item, index) => ({value: item, index: index}))
+        console.log(newArr)
     </script>
 </body>
 </html>
